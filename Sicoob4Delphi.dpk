@@ -1,0 +1,48 @@
+package Sicoob4Delphi;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  bindengine,
+  bindcomp,
+  RESTComponents;
+
+contains
+  Sicoob4D.Interfaces in 'src\Sicoob4D.Interfaces.pas',
+  Sicoob4D.Auth.Interfaces in 'src\auth\Sicoob4D.Auth.Interfaces.pas',
+  Sicoob4D.Resources.Interfaces in 'src\resources\Sicoob4D.Resources.Interfaces.pas',
+  Sicoob4D.Auth.Impl in 'src\auth\Sicoob4D.Auth.Impl.pas',
+  Sicoob4D in 'src\Sicoob4D.pas',
+  Sicoob4D.Commons.Types in 'src\commons\Sicoob4D.Commons.Types.pas',
+  Sicoob4D.Resources.Impl in 'src\resources\Sicoob4D.Resources.Impl.pas',
+  Sicoob4D.Commons.Params in 'src\commons\Sicoob4D.Commons.Params.pas',
+  Sicoob4D.Commons.Interfaces in 'src\commons\Sicoob4D.Commons.Interfaces.pas',
+  Sicoob4D.Resources.RestHttpClient in 'src\resources\Sicoob4D.Resources.RestHttpClient.pas';
+
+end.
