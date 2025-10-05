@@ -20,6 +20,8 @@ type
     function Post(const Url: String): iHttpClient;
     function Put(const Url: String): iHttpClient;
     function StatusCode: integer;
+    function CertificadoPFX(const APfxFile, ASenha: string): iHttpClient;
+    function CertificadoPEM(const ACertFile, AKeyFile, ARootCertFile: string): iHttpClient;
   end;
 
   iSicoob = interface

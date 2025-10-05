@@ -63,6 +63,8 @@ procedure TSicoob.BeforeExecute;
 var
   LPair: TPair<string, Variant>;
 begin
+  FHttpClient.CertificadoPEM(FParent.CertFile, FParent.KeyFile,'');
+
   FHttpClient.Authentication(FParent.Token).AddHeader('client_id',
     FParent.ClientId);
 

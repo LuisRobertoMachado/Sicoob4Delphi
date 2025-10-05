@@ -31,7 +31,10 @@ requires
   rtl,
   bindengine,
   bindcomp,
-  RESTComponents;
+  RESTComponents,
+  IndySystem,
+  IndyProtocols,
+  IndyCore;
 
 contains
   Sicoob4D.Interfaces in 'src\Sicoob4D.Interfaces.pas',

@@ -31,7 +31,8 @@ uses
 
 function TSicoob4D.AuthConfig: iAuthConfig;
 begin
-  FConfig := TAuthConfig.New;
+  if not Assigned(FConfig) then
+    FConfig := TAuthConfig.New;
   Result := FConfig;
 end;
 

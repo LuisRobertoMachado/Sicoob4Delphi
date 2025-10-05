@@ -12,7 +12,11 @@ type
     function BaseUrl : String; overload;
     function ClientId(const Value: string): iAuthConfig; Overload;
     function ClientId: string; Overload;
-    function Token(const Value: string): iAuthConfig; Overload;
+    function CertFile(const Value: string): iAuthConfig;Overload;
+    function CertFile: string;Overload;
+    function KeyFile(const Value: string): iAuthConfig;Overload;
+    function KeyFile: string;Overload;
+    function Scope(const Values: array of TApiScope): iAuthConfig;
     function Token: string; Overload;
   end;
 

@@ -117,6 +117,9 @@
         <DCCReference Include="bindengine.dcp"/>
         <DCCReference Include="bindcomp.dcp"/>
         <DCCReference Include="RESTComponents.dcp"/>
+        <DCCReference Include="IndySystem.dcp"/>
+        <DCCReference Include="IndyProtocols.dcp"/>
+        <DCCReference Include="IndyCore.dcp"/>
         <DCCReference Include="src\Sicoob4D.Interfaces.pas"/>
         <DCCReference Include="src\auth\Sicoob4D.Auth.Interfaces.pas"/>
         <DCCReference Include="src\resources\Sicoob4D.Resources.Interfaces.pas"/>
